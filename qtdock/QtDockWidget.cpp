@@ -25,7 +25,7 @@ public:
     DockWidgetImpl() : _active(false), _helper(nullptr)
     {
         //_background.setRgbF(1.0f * qrand() / RAND_MAX, 1.0f * qrand() / RAND_MAX, 1.0f * qrand() / RAND_MAX);
-		_background.setRgbF(0, 0, 0);
+        _background.setRgbF(0, 0, 0);
         _dockFeatures = Flex::AllowDockAsNorthTabPage | Flex::AllowDockAsSouthTabPage;
         _siteFeatures = Flex::AllowDockAsNorthTabPage | Flex::AllowDockAsSouthTabPage;
     }
@@ -226,9 +226,9 @@ void DockWidget::paintEvent(QPaintEvent*)
 
         painter.drawText(8 + (hasIcon ? 18 : 0), (impl->_titleBarHeight - lr.height()) / 2, lr.width() - 2, lr.height(), Qt::AlignLeft | Qt::AlignVCenter | Qt::TextSingleLine, titleOption.text);
 
-        QStyleOptionFrame frameOption;
-        frameOption.initFrom(this);
-        painter.drawPrimitive(QStyle::PE_Frame, frameOption);
+        //QStyleOptionFrame frameOption;
+        //frameOption.initFrom(this);
+        //painter.drawPrimitive(QStyle::PE_Frame, frameOption);
     }
     else
     {

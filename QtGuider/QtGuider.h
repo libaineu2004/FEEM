@@ -40,6 +40,8 @@ private:
     friend class QtGuiderImpl;
 private:
     QScopedPointer<QtGuiderImpl> impl;
+
+    FlexWidget* content;
 };
 
 class QtCentral : public QWidget

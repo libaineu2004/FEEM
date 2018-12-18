@@ -220,9 +220,9 @@ void DockSiteImpl::adjust(DockSite* self, DockWidget* widget)
         }
         _tabBar->setTabsClosable(true);
         _tabBar->setShape(QTabBar::RoundedNorth);
-        //_tabBar->setFixedHeight(22);
-        //if (widget) _tabBar->show();
-        //_tabBar->show();//控制tabbar的显示
+        _tabBar->setFixedHeight(22);
+        if (widget) _tabBar->show();
+        _tabBar->show();//控制tabbar的显示
     }
     else
     {
