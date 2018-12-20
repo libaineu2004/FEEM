@@ -521,7 +521,7 @@ void QtGuider::createTable(QWidget * w){
 	tableWidget->setHorizontalHeaderItem(9, new QTableWidgetItem(tr("Addresswewe")));
 	tableWidget->setHorizontalHeaderItem(10, new QTableWidgetItem(tr("Process")));
 
-	int height = tableWidget->horizontalHeader()->sizeHint().height();
+    int height = 20;//tableWidget->horizontalHeader()->sizeHint().height();
 
 	tableWidget->setRowHeight(0, height);
     tableWidget->setVerticalHeaderItem(0, new QTableWidgetItem(QIcon(":/Resources/modules.png"), tr("")));
