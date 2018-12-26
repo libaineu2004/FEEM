@@ -975,7 +975,7 @@ FlexWidget::FlexWidget(Flex::ViewMode viewMode, QWidget* parent, Qt::WindowFlags
 
     for (int i = 0; i < 4; ++i)
     {
-        impl->_sides[i]->hide();
+        //impl->_sides[i]->hide();
     }
 
     if (isWindow())

@@ -227,7 +227,7 @@ void DockGuider::paintEvent(QPaintEvent*)
 
     painter.setOpacity(0.75);
 
-    QColor background("#CCCCCC");
+    QColor background("#99CCFF");//153, 204, 255//CCCCCC
 
     switch (impl->_area)
     {

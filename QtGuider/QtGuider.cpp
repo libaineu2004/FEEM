@@ -204,24 +204,24 @@ void QtGuider::openView_N(int n)
                 flexWidget->setObjectName("L0");
                 dockWidget->setViewMode(Flex::ToolView);
                 dockWidget->setWindowTitle(dockWidgetName);
-                flexWidget->addDockWidget(dockWidget);
-                content->addFlexWidget(flexWidget,Flex::M,0);
+                flexWidget->addDockWidget(dockWidget);flexWidget->show();
+                //content->addFlexWidget(flexWidget,Flex::M,0);
 				break;
 			case 1:
 				createTree(dockWidget->widget());
                 flexWidget->setObjectName("L0");
                 dockWidget->setViewMode(Flex::ToolView);
                 dockWidget->setWindowTitle(dockWidgetName);
-                flexWidget->addDockWidget(dockWidget);
-                content->addFlexWidget(flexWidget,Flex::L0,0);
+                flexWidget->addDockWidget(dockWidget);flexWidget->show();
+                //content->addFlexWidget(flexWidget,Flex::L0,0);
 				break;
 			case 2:
 				createTable(dockWidget->widget());
                 flexWidget->setObjectName("L0");
                 dockWidget->setViewMode(Flex::ToolView);
                 dockWidget->setWindowTitle(dockWidgetName);
-                flexWidget->addDockWidget(dockWidget);
-                content->addFlexWidget(flexWidget,Flex::B0,0);
+                flexWidget->addDockWidget(dockWidget);flexWidget->show();
+                //content->addFlexWidget(flexWidget,Flex::B0,0);
 				break;
 			default:
 				break;

@@ -108,7 +108,7 @@ void DockSiteImpl::update(DockSite* self, Flex::DockMode dockMode)
 
     if (isTitleBarVisible(self))
     {
-        if (tempWidget) tempWidget->setWindowTitle(Flex::window()->windowTitle());
+        //if (tempWidget) tempWidget->setWindowTitle(Flex::window()->windowTitle());
         self->setContentsMargins(0, _titleBarHeight, 0, 0);
         if (!_helper)
         {
@@ -1067,11 +1067,11 @@ void DockSite::on_tabMdi_currentChanged(int index)
     {
         if (impl->isTitleBarVisible(this))
         {
-            tempWidget->setWindowTitle(Flex::window()->windowTitle());
+            //tempWidget->setWindowTitle(Flex::window()->windowTitle());
         }
         else
         {
-            tempWidget->setWindowTitle(impl->_tabBar->tabText(index));
+            //tempWidget->setWindowTitle(impl->_tabBar->tabText(index));
         }
 
         tempWidget->update();
